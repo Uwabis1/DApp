@@ -1,0 +1,705 @@
+{
+  "contractName": "Ucoin",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"minter\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/Ucoin.sol\":\"Ucoin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/Ucoin.sol\":{\"keccak256\":\"0x5fdf4068b02a187f0d77c195c5465a3b8665d324519930ad6f7885fa2d06776a\",\"urls\":[\"bzz-raw://87e62fa7dd30aeea795a108cd23f5c15f9ef5eba645539724427499f5a0449ce\",\"dweb:/ipfs/QmcBpsJJzLKUDgYeWUar1n5JDZWH4sNFf75bF8kmG9J9AH\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600581526020017f55636f696e0000000000000000000000000000000000000000000000000000008152506000908051906020019061004f9291906100d8565b506040518060400160405280600481526020017f55534455000000000000000000000000000000000000000000000000000000008152506001908051906020019061009b9291906100d8565b5069d3c21bcecceda10000006002556012600360006101000a81548160ff021916908360ff1602179055503480156100d257600080fd5b5061017d565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061011957805160ff1916838001178555610147565b82800160010185558215610147579182015b8281111561014657825182559160200191906001019061012b565b5b5090506101549190610158565b5090565b61017a91905b8082111561017657600081600090555060010161015e565b5090565b90565b6104198061018c6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806307546172146100ea57806318160ddd1461013457806327e235e314610152578063313ce567146101aa57806395d89b41146101ce575b600080fd5b61006f610251565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f26102ef565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61013c610315565b6040518082815260200191505060405180910390f35b6101946004803603602081101561016857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031b565b6040518082815260200191505060405180910390f35b6101b2610333565b604051808260ff1660ff16815260200191505060405180910390f35b6101d6610346565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102165780820151818401526020810190506101fb565b50505050905090810190601f1680156102435780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102e75780601f106102bc576101008083540402835291602001916102e7565b820191906000526020600020905b8154815290600101906020018083116102ca57829003601f168201915b505050505081565b600360019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b60046020528060005260406000206000915090505481565b600360009054906101000a900460ff1681565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103dc5780601f106103b1576101008083540402835291602001916103dc565b820191906000526020600020905b8154815290600101906020018083116103bf57829003601f168201915b50505050508156fea265627a7a723158200176a01e5fe0394583f9518419ce0283a0140b3e909e9151d03a4bd20130e52564736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806307546172146100ea57806318160ddd1461013457806327e235e314610152578063313ce567146101aa57806395d89b41146101ce575b600080fd5b61006f610251565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f26102ef565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61013c610315565b6040518082815260200191505060405180910390f35b6101946004803603602081101561016857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031b565b6040518082815260200191505060405180910390f35b6101b2610333565b604051808260ff1660ff16815260200191505060405180910390f35b6101d6610346565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102165780820151818401526020810190506101fb565b50505050905090810190601f1680156102435780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102e75780601f106102bc576101008083540402835291602001916102e7565b820191906000526020600020905b8154815290600101906020018083116102ca57829003601f168201915b505050505081565b600360019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b60046020528060005260406000206000915090505481565b600360009054906101000a900460ff1681565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103dc5780601f106103b1576101008083540402835291602001916103dc565b820191906000526020600020905b8154815290600101906020018083116103bf57829003601f168201915b50505050508156fea265627a7a723158200176a01e5fe0394583f9518419ce0283a0140b3e909e9151d03a4bd20130e52564736f6c63430005110032",
+  "sourceMap": "26:279:3:-;;;47:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;81:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;146:25;117:54;;221:2;197:26;;;;;;;;;;;;;;;;;;;;26:279;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:279:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "26:279:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:279:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;47:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;47:28:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;230:21;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;117:54;;;:::i;:::-;;;;;;;;;;;;;;;;;;;258:38;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;258:38:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;197:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;81:29;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;81:29:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;47:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;230:21::-;;;;;;;;;;;;;:::o;117:54::-;;;;:::o;258:38::-;;;;;;;;;;;;;;;;;:::o;197:26::-;;;;;;;;;;;;;:::o;81:29::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0; \n\ncontract Ucoin {\n    string public name = 'Ucoin';\n    string public symbol = 'USDU'; \n    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens\n    uint8 public decimals = 18; \n    address public minter; \n    mapping(address=>uint) public balances; \n    \n}\n",
+  "sourcePath": "/home/uwabis/myProject/defi-staking-app-starter/defi-staking-app-starter/src/contracts/Ucoin.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/Ucoin.sol",
+    "exportedSymbols": {
+      "Ucoin": [
+        412
+      ]
+    },
+    "id": 413,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 393,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 412,
+        "linearizedBaseContracts": [
+          412
+        ],
+        "name": "Ucoin",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 396,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "47:28:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 394,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "47:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "55636f696e",
+              "id": 395,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "68:7:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_d5f2cef2aca3347899b0a7933814944aa9990eb45252e1dc2cb5d802140b7bfa",
+                "typeString": "literal_string \"Ucoin\""
+              },
+              "value": "Ucoin"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 399,
+            "name": "symbol",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "81:29:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 397,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "81:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "55534455",
+              "id": 398,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "104:6:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_f6b7ff931280d684d316a4681b4b4402d5167ad43bda30ea083ec9c54195d7e7",
+                "typeString": "literal_string \"USDU\""
+              },
+              "value": "USDU"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 402,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "117:54:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 400,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "117:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31303030303030303030303030303030303030303030303030",
+              "id": 401,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "146:25:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000000000000000000000_by_1",
+                "typeString": "int_const 1000000000000000000000000"
+              },
+              "value": "1000000000000000000000000"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 405,
+            "name": "decimals",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "197:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 403,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "197:5:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3138",
+              "id": 404,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "221:2:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_18_by_1",
+                "typeString": "int_const 18"
+              },
+              "value": "18"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 407,
+            "name": "minter",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "230:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 406,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "230:7:3",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 411,
+            "name": "balances",
+            "nodeType": "VariableDeclaration",
+            "scope": 412,
+            "src": "258:38:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 410,
+              "keyType": {
+                "id": 408,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "266:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "258:22:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 409,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "275:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 413,
+        "src": "26:279:3"
+      }
+    ],
+    "src": "0:306:3"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/Ucoin.sol",
+      "exportedSymbols": {
+        "Ucoin": [
+          412
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 393,
+        "name": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            412
+          ],
+          "name": "Ucoin",
+          "scope": 413
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "name",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 394,
+                "name": "ElementaryTypeName",
+                "src": "47:6:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "55636f696e",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"Ucoin\"",
+                  "value": "Ucoin"
+                },
+                "id": 395,
+                "name": "Literal",
+                "src": "68:7:3"
+              }
+            ],
+            "id": 396,
+            "name": "VariableDeclaration",
+            "src": "47:28:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "symbol",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 397,
+                "name": "ElementaryTypeName",
+                "src": "81:6:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "55534455",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"USDU\"",
+                  "value": "USDU"
+                },
+                "id": 398,
+                "name": "Literal",
+                "src": "104:6:3"
+              }
+            ],
+            "id": 399,
+            "name": "VariableDeclaration",
+            "src": "81:29:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalSupply",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 400,
+                "name": "ElementaryTypeName",
+                "src": "117:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31303030303030303030303030303030303030303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1000000000000000000000000",
+                  "value": "1000000000000000000000000"
+                },
+                "id": 401,
+                "name": "Literal",
+                "src": "146:25:3"
+              }
+            ],
+            "id": 402,
+            "name": "VariableDeclaration",
+            "src": "117:54:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "decimals",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint8",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint8",
+                  "type": "uint8"
+                },
+                "id": 403,
+                "name": "ElementaryTypeName",
+                "src": "197:5:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3138",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 18",
+                  "value": "18"
+                },
+                "id": 404,
+                "name": "Literal",
+                "src": "221:2:3"
+              }
+            ],
+            "id": 405,
+            "name": "VariableDeclaration",
+            "src": "197:26:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "minter",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 406,
+                "name": "ElementaryTypeName",
+                "src": "230:7:3"
+              }
+            ],
+            "id": 407,
+            "name": "VariableDeclaration",
+            "src": "230:21:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "balances",
+              "scope": 412,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => uint256)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 408,
+                    "name": "ElementaryTypeName",
+                    "src": "266:7:3"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 409,
+                    "name": "ElementaryTypeName",
+                    "src": "275:4:3"
+                  }
+                ],
+                "id": 410,
+                "name": "Mapping",
+                "src": "258:22:3"
+              }
+            ],
+            "id": 411,
+            "name": "VariableDeclaration",
+            "src": "258:38:3"
+          }
+        ],
+        "id": 412,
+        "name": "ContractDefinition",
+        "src": "26:279:3"
+      }
+    ],
+    "id": 413,
+    "name": "SourceUnit",
+    "src": "0:306:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x4ce2B85F8824CA31D890D1550fCB374F9D849277",
+      "transactionHash": "0x3e3e65a144c5c5731b487a146f9ec613ccd61d15e32d9a19f3611ccabd63aba2"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-28T11:07:15.807Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
