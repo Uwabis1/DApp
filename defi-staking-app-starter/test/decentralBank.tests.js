@@ -65,6 +65,21 @@ contract('DecentralBank',([owner, customer]) => {
         })
 
     })
+
+    describe('Yield Farming', async() => {
+        it('rewards tokens for staking', async() => {
+            let result
+            
+            //check Investor Balance
+            result = await tether.balanceOf(customer)
+            //:check to see if cumtomer has 100 tokens to stake
+            assert.equal(result.toString(), tokens('100'), 'customer mock wallet balance before staking')
+      
+            //check staking for customer of 100 tokens
+            await tether.approve(decentralBank.address, tokens('100'), {from:customer})
+            await decentralBank.depositTokens(tokens('100'), {from: customer})
+        })    
+     })
     
 })
 
