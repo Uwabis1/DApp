@@ -1,6 +1,4 @@
-
-//SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0; 
+pragma solidity ^0.5.0; 
 
 
 contract Ucoin {
@@ -30,7 +28,7 @@ contract Ucoin {
     mapping(address =>mapping(address => uint256)) public AprovalTime; 
 
 
-    constructor() {
+    constructor() public {
         balanceOf[msg.sender] = totalSupply; 
         minter = msg.sender; 
     }
