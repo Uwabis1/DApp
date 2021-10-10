@@ -1,3 +1,7 @@
+### This was coded by me, Uwabis, in fulfillment of my Course: The Complete DApp - Solidity & React - Blockchain Development. 
+
+## Upgraded features have been (still ongoing) effected on the overall DApplication. You can however, follow the instrcutions below to download the orignal template. 
+
 # defi-staking-app-starter
 
 ## To download me simply open up the terminal and run: 
