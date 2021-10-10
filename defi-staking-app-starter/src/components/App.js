@@ -5,6 +5,7 @@ import Web3 from 'web3';
 import Tether from '../truffle_abis/Tether.json'
 import RWD from '../truffle_abis/RWD.json'
 import DecentralBank from '../truffle_abis/DecentralBank.json'
+import Main from './Main.js'
 
 
 class App extends Component {
@@ -66,36 +67,54 @@ async loadBlockchainData() {
         window.alert('Error! Decentral Bank Contract not deployed- no detected network')
     }
     this.setState({loading: false})
+
+  
 }
 
-constructor(props) {
-    super(props)
-    this.state = {
-        account: '0x0',
-        tether: {}, 
-        rwd: {}, 
-        decentralBank: {}, 
-        tetherBalance: '0', 
-        rwdBalance: '0', 
-        stakingBalance: '0', 
-        loading: true
+    constructor(props) {
+        super(props)
+        this.state = {
+            account: '0x0',
+            tether: {}, 
+            rwd: {}, 
+            decentralBank: {}, 
+            tetherBalance: '0', 
+            rwdBalance: '0', 
+            stakingBalance: '0', 
+            loading: true
+        }
     }
-}
 
-//our React Code goes in here!
-render() {
-return (
-<div>
-<Navbar account={this.state.account}/>
-<div className='text-center'>
-<h1>
-    {console.log(this.state.loading)}
-</h1>
-</div>
-
-</div>
-)
-}
+    //our React Code goes in here!
+    render() {
+        let content
+        {this.state.loading ? content = 
+        <p id="loader" className='text-center' style={{color:'white', margin:'30px'}}>
+        LOADING PLEASE...</p> : content = 
+        <Main
+        tetherBalance={this.state.tetherBalance}
+        rwdBalance={this.state.rwdBalance}
+        stakingBalance={this.state.stakingBalance}
+        stakeTokens={this.stakeTokens}
+        unstakeTokens={this.unstakeTokens}
+        decentralBankContract={this.decentralBank}
+        />}
+        
+        return (
+            <div>
+                <Navbar account={this.state.account}/>
+                    <div className='container-fluid mt-5'>
+                        <div className='row'>
+                            <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px'}} style={{ minHeight: '100vm'}}>
+                                <div>
+                                    {content}
+                                </div>
+                            </main>
+                        </div> 
+                    </div>
+            </div>
+        )
+    }
 }
 
 export default App; 
