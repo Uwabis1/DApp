@@ -2,7 +2,7 @@
 
 ## Upgraded features have been (still ongoing) effected on the overall DApplication. You can however, follow the instrcutions below to download the orignal template. 
 
-# defi-staking-app-starter
+# defi-staking-app-starter.
 
 ## To download me simply open up the terminal and run: 
 
@@ -10,6 +10,7 @@ git clone https://github.com/01Clarian/defi-staking-app-starter.git
 
 This code has been revesed engineered from Greg DAPPuniversity.com! If you enjoyed this course go check out his work ;) 
 Please feel free to clone and style this project at your own discretion!
+
 
 ## 1 To Clone or download this project simply run: 
 
@@ -38,6 +39,7 @@ API key with your API key.
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -74,3 +76,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
